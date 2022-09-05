@@ -27,7 +27,7 @@ async function getImages() {
     .map(async (file) => {
       return {
         inputPath: file,
-        url: `https://raw.githubusercontent.com/distantcam/metagala.xyz/master/images/${file}`,
+        url: `https://raw.githubusercontent.com/Uvacoder/abc-image-collection/tree/main/images/${file}`,
         ...await encodeImageToBlurhash(path.resolve(__dirname, `../../images/${file}`))
       };
     });
